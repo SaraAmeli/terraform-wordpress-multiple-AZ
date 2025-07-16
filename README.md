@@ -4,6 +4,9 @@ This project automates the deployment of a **high-availability WordPress applica
 
 ---
 
+<img width="1789" height="1899" alt="L2fig" src="https://github.com/user-attachments/assets/481b4d86-1d4c-4c24-8ed2-13f479dc16e4" />
+
+
 ## 🧩 Architecture Overview
 
 - **Multi-AZ VPC** with both public and private subnets.
