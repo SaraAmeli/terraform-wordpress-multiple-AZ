@@ -4,7 +4,7 @@ This project automates the deployment of a **high-availability WordPress applica
 
 ---
 
-<img width="1789" height="1899" alt="L2fig" src="https://github.com/user-attachments/assets/481b4d86-1d4c-4c24-8ed2-13f479dc16e4" />
+<img width="1789" height="1899" alt="L2" src="https://github.com/user-attachments/assets/98b8efb0-83c1-4cdd-9caf-22b67cf11b89" />
 
 
 ## 🧩 Architecture Overview
