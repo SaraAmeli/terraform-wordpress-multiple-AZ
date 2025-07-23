@@ -39,3 +39,72 @@ This project automates the deployment of a **high-availability WordPress applica
 ```bash
 git clone https://github.com/SaraAmeli/terraform-wordpress-multi-az.git
 cd terraform-wordpress-multi-az
+```
+
+
+
+This project automates the provisioning of a **highly available WordPress blog** using Terraform on AWS. It features a **multi-AZ infrastructure** with public and private subnets, load balancing, auto scaling, and a bastion host. The blog focuses on **Agentic AI**—a cutting-edge area exploring autonomous, goal-directed AI agents.
+
+---
+
+## 🌐 Live Concept: Agentic AI Blog
+
+A modern tech blog focused on:
+- Agentic AI architectures
+- LLM-based agents and frameworks (AutoGPT, BabyAGI, LangGraph)
+- Practical DevOps & AWS tutorials
+- AI safety, alignment, and autonomy
+
+### 🧩 Planned Pages
+- **Home** – Introduction and latest posts  
+- **Blog** – Technical deep-dives on Agentic AI  
+- **Tutorials** – AWS and Terraform walkthroughs  
+- **About** – Project background  
+- **Contact** – Get in touch  
+
+---
+
+## 🏗️ Architecture Overview
+
+![Multi-AZ WordPress Architecture](assets/L2fig.png)
+
+### Key Features:
+- **Multi-AZ EC2 Instances** for WordPress
+- **Application Load Balancer (ALB)** for traffic distribution
+- **Launch Template + Auto Scaling Group**
+- **Private subnets** for WordPress
+- **Bastion Host** in public subnet (for SSH access)
+- **No NAT Gateway** (sandbox-safe, cost-efficient)
+- **User Data script** for full WordPress provisioning
+
+---
+
+## 🧾 Cost Estimate (AWS Sandbox)
+
+| Resource         | Count | Type         | Monthly Est. |
+|------------------|-------|--------------|--------------|
+| EC2 Instances    | 3     | t3.micro     | ~$23         |
+| EBS Volumes      | 3x8GB | gp2          | ~$2.40       |
+| Load Balancer    | 1     | ALB          | ~$22         |
+| **Total**        | —     | —            | **~$47.40**  |
+
+[🧮 View AWS Pricing Calculator Estimate](https://calculator.aws.amazon.com/#/estimate?id=3f137de4c272a455bb8976a7a7742a47)
+
+---
+
+## 🧰 Terraform Structure
+
+```bash
+.
+├── main.tf
+├── vpc.tf
+├── subnets.tf
+├── security.tf
+├── alb.tf
+├── asg.tf
+├── bastion.tf
+├── user_data.sh
+├── variables.tf
+├── outputs.tf
+├── assets/
+│   └── L2fig.png
