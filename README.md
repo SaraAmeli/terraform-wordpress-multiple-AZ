@@ -41,27 +41,6 @@ git clone https://github.com/SaraAmeli/terraform-wordpress-multi-az.git
 cd terraform-wordpress-multi-az
 ```
 
-
-
-This project automates the provisioning of a **highly available WordPress blog** using Terraform on AWS. It features a **multi-AZ infrastructure** with public and private subnets, load balancing, auto scaling, and a bastion host. The blog focuses on **Agentic AI**—a cutting-edge area exploring autonomous, goal-directed AI agents.
-
----
-
-## 🌐 Live Concept: Agentic AI Blog
-
-A modern tech blog focused on:
-- Agentic AI architectures
-- LLM-based agents and frameworks (AutoGPT, BabyAGI, LangGraph)
-- Practical DevOps & AWS tutorials
-- AI safety, alignment, and autonomy
-
-### 🧩 Planned Pages
-- **Home** – Introduction and latest posts  
-- **Blog** – Technical deep-dives on Agentic AI  
-- **Tutorials** – AWS and Terraform walkthroughs  
-- **About** – Project background  
-- **Contact** – Get in touch  
-
 ---
 
 ## 🏗️ Architecture Overview
